@@ -1,9 +1,10 @@
 package jp.co.sample.domain;
 
 /**
- * @author 荒木貴大
+ * 従業員管理のドメイン.
  * 
- * 従業員管理のドメイン
+ * @author takahir.araki
+ * 
  *
  */
 public class Administrator {
@@ -17,6 +18,27 @@ public class Administrator {
 	private String mailAddress;
 	/**パスワード*/
 	private String password;
+	
+	/**
+	 * 引数なしのコンストラクタ
+	 */
+	public Administrator() {
+	}
+	/**
+	 * コンストラクタ
+	 * @param id
+	 * @param name
+	 * @param mailAddress
+	 * @param password
+	 */
+	public Administrator(Integer id, String name, String mailAddress, String password) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.mailAddress = mailAddress;
+		this.password = password;
+	}
+	
 	public Integer getId() {
 		return id;
 	}
@@ -46,32 +68,6 @@ public class Administrator {
 		return "Administrator [id=" + id + ", name=" + name + ", mailAddress=" + mailAddress + ", password=" + password
 				+ "]";
 	}
-	
-	
-	
-	
-	
-	/**
-	 * 引数なしのコンストラクタ
-	 */
-	public Administrator() {
-	}
-	/**
-	 * コンストラクタ
-	 * @param id
-	 * @param name
-	 * @param mailAddress
-	 * @param password
-	 */
-	public Administrator(Integer id, String name, String mailAddress, String password) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.mailAddress = mailAddress;
-		this.password = password;
-	}
-	
-	
 	
 		
 }
