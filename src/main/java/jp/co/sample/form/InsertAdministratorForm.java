@@ -6,9 +6,10 @@ package jp.co.sample.form;
  *
  */
 public class InsertAdministratorForm {
+	
 	/**名前*/
 	private String name;
-	/**メールアドレス */
+	/**メールアドレス*/
 	private String mailAddress;
 	/**パスワード*/
 	private String password;
@@ -35,6 +36,7 @@ public class InsertAdministratorForm {
 		return "InsertAdministratorForm [name=" + name + ", mailAddress=" + mailAddress + ", password=" + password
 				+ "]";
 	}
+	
 	
 	
 }

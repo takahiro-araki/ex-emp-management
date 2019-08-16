@@ -8,37 +8,22 @@ package jp.co.sample.domain;
  *
  */
 public class Administrator {
-	
-	/**ID */
-	private Integer id;
-	
-	/**名前*/
+	/**id*/
+	private  Integer id;
+	/**名前 */
 	private String name;
 	/**メールアドレス*/
 	private String mailAddress;
 	/**パスワード*/
 	private String password;
-	
-	/**
-	 * 引数なしのコンストラクタ
-	 */
-	public Administrator() {
-	}
-	/**
-	 * コンストラクタ
-	 * @param id
-	 * @param name
-	 * @param mailAddress
-	 * @param password
-	 */
 	public Administrator(Integer id, String name, String mailAddress, String password) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.mailAddress = mailAddress;
 		this.password = password;
 	}
-	
+	public Administrator() {
+	}
 	public Integer getId() {
 		return id;
 	}
@@ -69,5 +54,7 @@ public class Administrator {
 				+ "]";
 	}
 	
+	
+		
 		
 }
